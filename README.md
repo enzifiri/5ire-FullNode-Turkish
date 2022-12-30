@@ -19,8 +19,8 @@ Eğer mailiniz geldiyse bu rehberi kullanarak node kurup kontrat oluşturmaya ba
 <details>
 
 <summary> 
-<h1> 1.) Gelen Maildeki Şifre ile OVPN Client Oluşturma. 
-</summary> </h1>
+<h2> 1.) Gelen Maildeki Şifre ile OVPN Client Oluşturma. 
+</summary> </h2>
 
 Gelen Maildeki ilk linke tıklayalım ve rehberde verilen siteye giriş yapalım.
 
@@ -36,8 +36,8 @@ Client oluşturma tamamdır bir sonraki adıma geçin.
 <details>
 
 <summary> 
-<h1> 2.) OVPN kurulum ve oluşturulan Cliente Bağlama. 
-</summary> </h1>
+<h2> 2.) OVPN kurulum ve oluşturulan Cliente Bağlama. 
+</summary> </h2>
 
 [OVPN Indirme Linki](https://www.ovpn.com/en/guides#openvpn) Burdan indirip bilgisayarınıza kurun. <br>
 Uygulamayı açın, açtıktan sonra küçültülmüş olarak açılacaktır. Aşağıdaki görselden sırasıyla işaretlediklerime basın ve oluşturduğunuz clienti OVPN içine aktarın ve bağlanın.
@@ -51,8 +51,8 @@ Sonraki aşamaya geçin.
 <details>
 
 <summary> 
-<h1> 3.) Cüzdan oluşturma & Swap & Transfer & Metamask'a Eklemek. 
-</summary> </h1>
+<h2> 3.) Cüzdan oluşturma & Swap & Transfer & Metamask'a Eklemek. 
+</summary> </h2>
  
 Mailde verilen diğer link olan explorer sitesine giriş yapacağız (OVPN bağlantısı açık olmazsa Access Denied hatası alırsınız. Cliente bağlandığınıza emin olun.) <br>
 [Explorer Linki](https://explorer.5ire.network/)
@@ -102,8 +102,8 @@ Cüzdanınızı metamaskta import edin ve üstteki cüzdana bi kaç token transf
 <details>
 
 <summary> 
-<h1> 4.) Node Kurma ve Validatör oluşturma aşaması. 
-</summary> </h1>
+<h2> 4.) Node Kurma ve Validatör oluşturma aşaması. 
+</summary> </h2>
 
 ## Önce Sunucumuzu Güncelleyelim
 ```
@@ -129,8 +129,8 @@ docker run -p 30333:30333 -p 9933:9933 -p 9944:9944 5irechain/5ire-thunder-node:
 <details>
 
 <summary> 
-<h1> 5.) Contrat oluşturma ve etkileşime geçme. 
-</summary> </h1>
+<h2> 5.) Contrat oluşturma ve etkileşime geçme. 
+</summary> </h2>
 Aslında 2 yöntem var ama ben sadece 1. yöntemi anlatıcam. Diğer yöntemi merak edenler ekibin paylaştığı makaleden okuyabilir alt kısımda bırakıcam.
 
 Remix kullanarak bu işlemi yapıcaz biraz karışık gelebilir işaretlediğim yerleri sırasıyla yapmaya özen gösterin.
