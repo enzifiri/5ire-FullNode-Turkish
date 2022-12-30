@@ -11,7 +11,7 @@ Eğer mailiniz geldiyse bu rehberi kullanarak node kurup kontrat oluşturmaya ba
 1. Gelen maildeki şifre ile OVPN Client Oluşturma.
 2. OVPN kurulum ve oluşturulan Cliente Bağlama.
 3. Cüzdan oluşturma & Swap & Transfer & Metamask'a Eklemek.
-4. Node Kurma ve Validatör oluşturma aşaması.
+4. Node Kurma Aşaması.
 5. Contrat oluşturma ve etkileşime geçme.
 
 
@@ -102,7 +102,7 @@ Cüzdanınızı metamaskta import edin ve üstteki cüzdana bi kaç token transf
 <details>
 
 <summary> 
-<h2> 4.) Node Kurma ve Validatör oluşturma aşaması. 
+<h2> 4.) Node Kurma Aşaması.
 </summary> </h2>
 
 ## Önce Sunucumuzu Güncelleyelim
