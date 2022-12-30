@@ -234,3 +234,9 @@ EVM Adresim: 0xcf42d1D77912240Ce805f102E6158eF25f91619a
 ![image](https://user-images.githubusercontent.com/76253089/210088621-76b557d1-9206-40fe-80f0-49c5ea09c31e.png)
 
 </details>
+
+İşlemler bu kadardı
+[5ire Website](https://www.5ire.org/)
+[5ire Twitter](https://twitter.com/5ireChain)
+[5ire Discord](https://discord.gg/5ire)
+[Ekibin Makalesi](https://docs.5ire.org/docs/system-admin/intro)
