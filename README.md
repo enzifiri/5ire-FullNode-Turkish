@@ -235,8 +235,8 @@ EVM Adresim: 0xcf42d1D77912240Ce805f102E6158eF25f91619a
 
 </details>
 
-İşlemler bu kadardı
-[5ire Website](https://www.5ire.org/)
-[5ire Twitter](https://twitter.com/5ireChain)
-[5ire Discord](https://discord.gg/5ire)
-[Ekibin Makalesi](https://docs.5ire.org/docs/system-admin/intro)
+İşlemler bu kadardı <br>
+[5ire Website](https://www.5ire.org/) <br>
+[5ire Twitter](https://twitter.com/5ireChain) <br>
+[5ire Discord](https://discord.gg/5ire) <br>
+[Ekibin Makalesi](https://docs.5ire.org/docs/system-admin/intro) <br>
