@@ -125,7 +125,111 @@ docker run -p 30333:30333 -p 9933:9933 -p 9944:9944 5irechain/5ire-thunder-node:
 <details>
 
 <summary> 
-<h1> 4.) Contrat oluşturma ve etkileşime geçme. 
+<h1> 5.) Contrat oluşturma ve etkileşime geçme. 
 </summary> </h1>
+Aslında 2 yöntem var ama ben sadece 1. yöntemi anlatıcam. Diğer yöntemi merak edenler ekibin paylaştığı makaleden okuyabilir alt kısımda bırakıcam.
+
+Remix kullanarak bu işlemi yapıcaz biraz karışık gelebilir işaretlediğim yerleri sırasıyla yapmaya özen gösterin.
+
+Remix sitesine girelim [Remix Sitesi](https://remix.ethereum.org/)
+
+İşaretlediğim yere tıklayın ve yeni dosya oluşturun. İsmini enzifiri koyalım.
+![image](https://user-images.githubusercontent.com/76253089/210087536-d8396e24-95fb-4222-9d4d-7945febc20c1.png)
+
+Şimdi oluşturduğumuz enzifiri dosyasına alttaki komutu kopyalayıp yapıştırın. Çıkan uyarıya ok diyip kapayın.
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+ 
+// https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.0.0/contracts/token/ERC20/IERC20.sol
+interface IERC20 {
+   function totalSupply() external view returns (uint);
+ 
+   function balanceOf(address account) external view returns (uint);
+ 
+   function transfer(address recipient, uint amount) external returns (bool);
+ 
+   function allowance(address owner, address spender) external view returns (uint);
+ 
+   function approve(address spender, uint amount) external returns (bool);
+ 
+   function transferFrom(
+       address sender,
+       address recipient,
+       uint amount
+   ) external returns (bool);
+ 
+   event Transfer(address indexed from, address indexed to, uint value);
+   event Approval(address indexed owner, address indexed spender, uint value);
+}
+ 
+ 
+ 
+contract ERC20 is IERC20 {
+   uint public totalSupply;
+   mapping(address => uint) public balanceOf;
+   mapping(address => mapping(address => uint)) public allowance;
+   string public name = "Solidity by Example";
+   string public symbol = "SOLBYEX";
+   uint8 public decimals = 18;
+ 
+   function transfer(address recipient, uint amount) external returns (bool) {
+       balanceOf[msg.sender] -= amount;
+       balanceOf[recipient] += amount;
+       emit Transfer(msg.sender, recipient, amount);
+       return true;
+   }
+ 
+   function approve(address spender, uint amount) external returns (bool) {
+       allowance[msg.sender][spender] = amount;
+       emit Approval(msg.sender, spender, amount);
+       return true;
+   }
+ 
+   function transferFrom(
+       address sender,
+       address recipient,
+       uint amount
+   ) external returns (bool) {
+       allowance[sender][msg.sender] -= amount;
+       balanceOf[sender] -= amount;
+       balanceOf[recipient] += amount;
+       emit Transfer(sender, recipient, amount);
+       return true;
+   }
+ 
+   function mint(uint amount) external {
+       balanceOf[msg.sender] += amount;
+       totalSupply += amount;
+       emit Transfer(address(0), msg.sender, amount);
+   }
+ 
+   function burn(uint amount) external {
+       balanceOf[msg.sender] -= amount;
+       totalSupply -= amount;
+       emit Transfer(msg.sender, address(0), amount);
+   }
+}
+```
+Şimdi dosyamızı Compile edeceğiz. İşaretlediğim yerlere sırasıyla basın.
+![image](https://user-images.githubusercontent.com/76253089/210088154-4fbeda9b-fb38-4c6f-aed2-a20b92b5b948.png)
+
+Şimdi biraz kafanız karışabilir sırasıyla şunları yapalım
+Soldan Deploy kısmına tıklayın (1. İşaret) <br>
+Environment kısmına tıklayın ve Injected Provider - Metamask seçin ve 5ire Cüzdanınızı bağlayın. (2. İşaret) <br>
+Contract kısmından ERC20 - enzifiri.sol ü seçin. (3. İşaret) <br>
+Deploy tuşuna basıp kontratınızı onaylayın. (4. İşaret) <br>
+![image](https://user-images.githubusercontent.com/76253089/210088468-454f2ebe-764b-4620-afea-e3ac2e0af9a0.png)
+
+Deploy edip onayladıktan sonra aşağıda Deployed Contrat bölümü oluşacak ordan devam edeceğiz. <br>
+Öncelikle Mint kısmına 100000 yazıp Mint butonuna basın ve metamasktaki işlemi onaylayın. <br>
+Sonra Burn kısmına 10 yazıp Burn butonuna basıp metamasktaki işlemi onaylayın. <br>
+Dilerseniz transfer kısmından bana ya da başkasına transfer edip gönderim yapabilirsiniz. 
+  
+`
+EVM Adresim: 0xcf42d1D77912240Ce805f102E6158eF25f91619a
+`
+  
+![image](https://user-images.githubusercontent.com/76253089/210088621-76b557d1-9206-40fe-80f0-49c5ea09c31e.png)
 
 </details>
