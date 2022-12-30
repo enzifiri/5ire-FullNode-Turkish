@@ -22,7 +22,7 @@ Eğer mailiniz geldiyse bu rehberi kullanarak node kurup kontrat oluşturmaya ba
 <h2> 1.) Gelen Maildeki Şifre ile OVPN Client Oluşturma. 
 </summary> </h2>
 
-Gelen Maildeki ilk linke tıklayalım ve rehberde verilen siteye giriş yapalım.
+Gelen Maildeki ilk linke tıklayalım ve rehberde verilen siteye giriş yapalım. [Link](https://ovpn.5ire.network:943)
 
 <img src="https://user-images.githubusercontent.com/76253089/209724502-e6241f31-69e1-4878-8f94-8dd3f49e9057.png" align="center" height="600" width="500" />    
 
