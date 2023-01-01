@@ -34,9 +34,17 @@ Gelen Maildeki ilk linke tıklayalım ve rehberde verilen siteye giriş yapalım
 
 <img src="https://user-images.githubusercontent.com/76253089/209724502-e6241f31-69e1-4878-8f94-8dd3f49e9057.png" align="center" height="600" width="500" />    
 
-Açılan sayfada Mailinizde verilen bilgileri girin ve giriş yapın. Ben daha önce yaptığım için sonraki aşamaları gösteremeyeceğim..
+Açılan sayfada Mailinizde verilen bilgileri girin ve giriş yapın.
 
 ![Screenshot_3](https://user-images.githubusercontent.com/76253089/210077847-a74446e1-20af-423f-aca2-6d32c130de7a.png)
+
+Sonrasında sizden 2FA uygulaması kurmanızı istiyor. Google Auth kullanıp verdiği QR kodunu okutun ve ayarlamanızı yapın.
+
+![photo_2023-01-01_18-24-04](https://user-images.githubusercontent.com/76253089/210176043-8836b083-889f-41db-86e1-8dd6c9803621.jpg)
+
+Şimdi ise clienti indirmemiz gerekiyor işaretlediğim yere tıklayıp clienti indirin.
+
+![image](https://user-images.githubusercontent.com/76253089/210176086-ce43500c-b76d-4b19-9211-48832bf43211.png)
 
 Client oluşturma tamamdır bir sonraki adıma geçin.
 </details>
