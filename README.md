@@ -14,7 +14,8 @@ Eğer mailiniz geldiyse bu rehberi kullanarak node kurup kontrat oluşturmaya ba
 4. Node Kurma Aşaması.
 5. Contrat oluşturma ve etkileşime geçme.
 
-Full Node için <br> Minimum Sistem Gereksinimleri <br>
+
+## Full Node için <br> Minimum Sistem Gereksinimleri <br>
 Çekirdek: 4 <br>
 Bellek : 8 GB <br>
 Depolama : 100GB SSD
