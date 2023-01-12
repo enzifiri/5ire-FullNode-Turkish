@@ -55,7 +55,7 @@ Client oluşturma tamamdır bir sonraki adıma geçin.
 <h2> 2.) OVPN kurulum ve oluşturulan Cliente Bağlama. 
 </summary> </h2>
 
-[OVPN Indirme Linki](https://www.ovpn.com/en/guides#openvpn) Burdan indirip bilgisayarınıza kurun. <br>
+[OVPN Indirme Linki](https://openvpn.net/community-downloads/) Burdan OVPN 2.5.8 olanı indirin. <br>
 Uygulamayı açın, açtıktan sonra küçültülmüş olarak açılacaktır. Aşağıdaki görselden sırasıyla işaretlediklerime basın ve oluşturduğunuz clienti OVPN içine aktarın ve bağlanın.
 
 ![image](https://user-images.githubusercontent.com/76253089/210079192-6d108d75-bf58-4455-ac4f-fbb895c9fba2.png)
